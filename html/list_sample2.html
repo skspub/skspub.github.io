@@ -1,0 +1,735 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    $(".guide-title .more").on('click', function (event) {
+        var e = event || window.event;
+        
+        $(this).parents('.unitArea').find('.tagSource').toggleClass('active');
+        console.log(111);
+        return e.preventDefault();
+    });
+
+}, false);
+        </script>
+        <style>
+p.guide-title {border-bottom: 2px solid #000; font-weight: bold; padding: 20px 0 10px; margin-bottom: 10px; position: relative;}
+p.guide-title:before {content: '[ ';}
+p.guide-title:after {content: ' ]';}
+p.guide-title a.more {position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%);}
+p.guide-title a.more:before {content: '+';}
+ul.guide-list {margin-top: 15px;}
+ul.guide-list li + li {margin-top: 15px;}
+hr.i {
+    display: block;
+    width: 100%;
+    height: 0;
+    border-top: 1px dotted #9d9d9d;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+hr.g {
+	display: block;
+	width: 100%;
+	height: 0;
+	border-top: 1px solid #222;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1.guide-h1 {
+    margin: 40px 15px;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    line-height: normal;
+}
+h1.guide-h1 strong {
+    display: block;
+}
+h1.guide-h1 span {
+    display: inline-block;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 2px solid #000;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+xmp{ font-family: 'NanumGothic', sans-serif; padding:0 10px; line-height:1.5em;}
+.tagSource{
+    background: #e9e9e9;
+    color: #333;
+    padding: 0;
+    margin:10px 0 0 0;
+    font-size: 11px;
+    height: 1px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.tagSource.active {
+    height: auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+        </style>
+    </head>
+<body>
+	<header class="top">
+		<h1 class="guide-h1">
+            <strong>비대면 계좌개설</strong>
+            <span>PUBLISHING GUIDE</span>
+        </h1>
+	</header>
+	<article>
+		<div class="wrap">
+			<!-- 제목 -->
+            <div class="unitArea">
+    			<p class="guide-title">
+                    제목
+                    <a href="#" class="more">소스</a>
+                </p>
+    			<h2 class="title">타이틀</h2>
+                <div class="tagSource">
+                    <xmp>
+                        <h2 class="title">타이틀</h2>
+                    </xmp>
+                </div>
+            </div>
+			<hr class="g">
+			<h2 class="title bullet">불릿 타이틀</h2>
+
+			<!-- 목록 -->
+			<p class="guide-title">목록</p>
+			<ol class="number-list2">
+                <li> 보안매체(보안카드, OTP)는 온라인 발급이 불가하며 해당매체 미보유 고객은 출금 등 다수의 온라인업무가 제한됩니다.</li>
+                <li> 비대면 계좌개설은 만 19세 이상 내국인만 가능하며 외국인은 가까운 SK증권 지점을 방문해주세요.</li>
+                <li> 신분증 상태가 좋지 못하거나 오래되어 본인식별이 어려운 경우 비대면 실명확인이 거부될 수 있습니다.</li>
+            </ol>
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 버튼 -->
+            <p class="guide-title">버튼</p>
+            <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+            <button type="button" class="btn_s3 complete">성공</button>
+            <button type="button" class="btn_s3 fail">실패</button>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+            <p class="guide-title">정렬</p>
+            <p class="ac">가운데 정렬</p>
+            <p class="al">왼쪽 정렬</p>
+            <p class="ar">오른쪽 정렬</p>
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 표 -->
+            <p class="guide-title">표</p>
+            <div class="tbl-wrap">
+                <table class="tbl">
+                <caption></caption>
+                <colgroup>
+                    <col style="width: 32%;">
+                    <col style="width: 28%;">
+                    <col style="width: 40%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="row" class="txt_darkGray">구분</th>
+                        <th scope="row" class="txt_darkGray">일반지점</th>
+                        <th scope="row" class="txt_darkGray">스마트금융센터</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ac">전문PB상담</td>
+                        <td class="ac">가능</td>
+                        <td class="ac">불가</td>
+                    </tr>
+                    <tr>
+                        <td class="ac">신용공여한도</td>
+                        <td class="ac">4억원</td>
+                        <td class="ac">1억원</td>
+                    </tr>
+                    <tr>
+                        <td class="ac">투자정보<br>컨텐츠</td>
+                        <td class="ac">제공<br>
+                            <span style="font-size: 10px;">(이메일신청시)</span><br>
+                            <span style="font-size: 10px;">(일별/주별/월별)</span>
+                        </td>
+                        <td class="ac">불가</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <hr class="g">
+
+            <!-- 표 : thead -->
+            <div class="tbl-wrap">
+                <table class="tbl-stripe">
+                    <caption>계좌번호, 개설상품, 완료여부에 관한 표입니다.</caption>
+                    <colgroup>
+                        <col style="width: 41%;">
+                        <col style="width: 32%;">
+                        <col style="width: 27%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">계좌번호</th>
+                            <th scope="row">개설상품</th>
+                            <th scope="row">
+                                <span class="hidden">완료여부</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac">101-797057</td>
+                            <td class="ac">종합</td>
+                            <td class="ac">
+                                <button type="button" class="btn_s3 complete">완료</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ac">101-790998</td>
+                            <td class="ac">종합</td>
+                            <td class="ac">
+                                <button type="button" class="btn_s3 complete">완료</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 셀렉트 박스 -->
+            <p class="guide-title">Select box</p>
+            <span class="input_line">
+                <select name="" class="select" title="통신사 선택">
+                    <option value="">통신사를 선택해주세요</option>
+                    <option value="">KT</option>
+                    <option value="">SKT</option>
+                    <option value="">LG</option>
+                </select>
+            </span>
+            <hr class="i">
+            <div class="justify select-inline">
+                <select name="" title="시/도 선택" class="select rounded">
+                    <option value="">시/도 선택</option>
+                    <option value="">선택1</option>
+                    <option value="">선택2</option>
+                    <option value="">선택3</option>
+                </select>
+                <select name="" title="시/군/구 선택" class="select rounded">
+                    <option value="">시/군/구 선택</option>
+                    <option value="">선택1</option>
+                    <option value="">선택2</option>
+                    <option value="">선택3</option>
+                </select>
+            </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 전제동의 -->
+            <p class="guide-title">전체동의</p>
+            <div data-common-ac-group="true">
+                <span class="input_line justify">
+                    <span>필수동의사항</span>
+                    <label for="agree">
+                        <span class="small">전체동의</span>
+                        <input type="checkbox" id="agree" class="input_ck" name="" value="" data-common-all-check="false">
+                    </label>
+                </span>
+                <div class="agreement-group">
+                    <ul>
+                        <li class="justify">
+                            <span class="subject">개인정보 이용 및 제공 동의</span>
+                            <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                            <!--
+                                아래 사황에 따라 2개의 클래스를 스위칭
+                                전문보기 전 : btn-white
+                                전문보기 후 : tm01 
+                            -->
+                        </li>
+                        <li class="justify">
+                            <span class="subject">고유식별번호 처리 관련 동의</span>
+                            <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                        </li>
+                        <li class="justify">
+                            <span class="subject">통신사 이용 약관 동의</span>
+                            <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="g">
+
+            <!-- 단일선택 체크박스 -->
+            <p class="guide-title">단일선택 체크박스</p>
+            <ul data-common-check-group="1">
+                <li>
+                   <span class="input_line">
+                       <label for="gcCMA" class="justify">
+                           <strong>CMA</strong>
+                           <input type="checkbox" id="gcCMA" class="input_ck" name="gcCMA" value="" data-common-check="">
+                       </label>
+                   </span>
+                </li>
+                <li>
+                   <span class="input_line">
+                       <label for="gcAll" class="justify">
+                           <strong>종합 <span>(주식, 채권, ELS 등)</span></strong>
+                           <input type="checkbox" id="gcAll" class="input_ck" name="gcAll" value="" data-common-check="">
+                       </label>
+                   </span>
+                </li>
+                <li>
+                   <span class="input_line">
+                       <label for="gcFin" class="justify">
+                           <strong>금융상품 <span>(채권, ELS, 펀드 등)</span></strong>
+                           <input type="checkbox" id="gcFin" class="input_ck" name="gcFin" value="" data-common-check="">
+                       </label>
+                   </span>
+                </li>
+                <li>
+                   <span class="input_line">
+                       <label for="gcRobo" class="justify">
+                           <strong>로보어드바이저 전용계좌</strong>
+                           <input type="checkbox" id="gcRobo" class="input_ck" name="gcRobo" value="" data-common-check="">
+                       </label>
+                   </span>
+                </li>
+            </ul>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 버튼형 라디오버튼 -->
+            <p class="guide-title">버튼형 라디오버튼</p>
+            <span class="form-group ar">
+                <label for="amAgree" class="btn-radio">
+                    <input type="radio" name="rd1" id="amAgree" checked="">
+                    <span>동의</span>
+                </label>
+                <label for="amDisagree" class="btn-radio">
+                    <input type="radio" name="rd1" id="amDisagree">
+                    <span>미동의</span>
+                </label>
+            </span>
+            <div class="radio-group flex justify-center" data-radio-group-col="3">
+                <label for="home" class="justify-center">
+                    <input type="radio" id="home" name="address1" checked="">
+                    <span class="justify-center">자택</span>
+                </label>
+                <label for="job" class="justify-center">
+                    <input type="radio" id="job" name="address1">
+                    <span class="justify-center">직장</span>
+                </label>
+                <label for="no_accept" class="justify-center">
+                    <input type="radio" id="no_accept" name="address1">
+                    <span class="justify-center">안받음</span>
+                </label>
+            </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- input type=text -->
+            <p class="guide-title">input type=text : Rounding</p>
+            <span class="rounded-input">
+                <input type="email" name="userEmail" id="" class="input_hn tt01" title="이메일 주소 입력" placeholder="markchris@naver.com" value="">
+            </span>
+            <span class="input_no_line justify text-input-inline">
+                <input type="text" title="도로명 입력" name="roadName" tabindex="1" placeholder="도로명 입력" class="input_hn rounded tt01" value="">
+                <input type="text" title="건물명 입력" name="buildingName" tabindex="1" placeholder="건물명 입력" class="input_hn rounded tt01" value="">
+            </span>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 실명확인 방식 -->
+            <p class="guide-title">실명확인 방식</p>
+            <div class="realname-check">
+                <ul class="flex justify-center">
+                    <li>
+                        <label for="rnChkVideo" class="rc-video align-stretch">
+                            <input type="radio" name="rnChk" id="rnChkVideo" checked="">
+                            <div class="flex-dir-col justify-start">
+                                <strong class="subject">영상통화인증</strong>
+                                <span>상담원과 영상통화<br>본인확인</span>
+                                <div class="possible_time flex-dir-col">
+                                    <strong class="small-subject">가능시간</strong>
+                                    <span>09:00 - 17:30</span>
+                                </div>
+                            </div>
+                        </label>
+                        <button type="button" class="btn_s3 btn-white">안내사항</button>
+                    </li>
+                    <li>
+                        <label for="rnChkTransfer" class="rc-transfer align-stretch">
+                            <input type="radio" name="rnChk" id="rnChkTransfer">
+                            <div class="flex-dir-col">
+                                <strong class="subject">소액이체인증</strong>
+                                <span>본인계좌에서 개설예정<br>계좌로 소액 이체</span>
+                                <div class="possible_time">
+                                    <strong class="small-subject">가능시간</strong>
+                                    <span>365일, 24시간<br>(23:30 - 00:30 제외)</span>
+                                </div>
+                            </div>
+                        </label>
+                        <button type="button" class="btn_s3 btn-white">안내사항</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 문단 -->
+            <p class="guide-title">문단</p>
+            <p class="description ac">본인확인을 위해 <strong>신분증 촬영</strong>을 시작합니다<br>촬영하실 신분증을 준비해주세요</p>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 리스트 : 제목 없음 -->
+            <p class="guide-title">리스트 : 제목 없음</p>
+            <ul class="bullet-list">
+                <li class="txt_darkGray">신분증 앞면이 잘 보이도록 가이드 영역에 맞게 <strong>가로로 촬영</strong>해 주세요</li>
+                <li class="txt_darkGray">신분증 정보가 <strong>올바르지 않을 경우</strong> 계좌개설이 불가할 수 있습니다</li>
+                <li class="txt_darkGray">신분증 정보가 <strong>올바르지 않을 경우</strong> 계좌개설이 불가할 수 있습니다</li>
+                <li class="txt_darkGray">신분증 정보가 <strong>올바르지 않을 경우</strong> 계좌개설이 불가할 수 있습니다</li>
+            </ul>
+
+            <hr class="g">
+
+            <!-- 리스트 : 제목 있음 -->
+            <p class="guide-title">리스트 : 제목 + 내용</p>
+            <div class="subject-list">
+                <dl>
+                    <dt>금융기관</dt>
+                    <dd>국민은행</dd>
+                </dl>
+                <dl>
+                    <dt>계좌번호</dt>
+                    <dd>123423453456</dd>
+                </dl>
+            </div>
+            <hr class="i">
+            <div class="subject-list border">
+                <dl>
+                    <dt class="w2">가입상품</dt>
+                    <dd>
+                        <strong class="txt_darkGray">CMA</strong>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="w2">계좌번호</dt>
+                    <dd>
+                        <strong class="txt_darkGray">123-123456-78</strong>
+                    </dd>
+                </dl>
+            </div>
+
+            <hr class="g">
+
+            <!-- 리스트 : 번호 -->
+            <p class="guide-title">리스트 : 번호</p>
+            <ol class="number-list">
+                <li>
+                    <span class="subject">타인으로부터 통장 대여 요청을 받은 사실이 있습니까?</span>
+                </li>
+                <li>
+                    <span class="subject">타인으로부터 신용등급상향, 대출 등의 목적으로 계좌개설을 요청 받은 사실이 있습니까?</span>
+                </li>
+                <li>
+                    <span class="subject">03. 본 확인서 내용을 충분히 이해하고 틀림없이 기재하였습니다.</span>
+                </li>
+            </ol>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 금융기관선택 : tab + button table -->
+            <p class="guide-title">금융기관선택 : tab + button table</p>
+            <div class="tab-wrap" data-common-tab="tm01" data-fc-refresh="">
+                <div class="tab">
+                    <ul class="flex justify-center">
+                        <li class="active">
+                            <button type="button" class="justify-center tm01">은행</button>
+                        </li>
+                        <li class="justify-center">
+                            <button type="button" class="justify-center">증권</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-page-group">
+
+                    <div class="tab-page active" data-common-tab-page="1">
+                        <div class="table-list flex flex-wrap" data-table-list-col="3" data-common-theme="tm01">
+                            <button type="button" class="tm01">산업은행</button>
+                            <button type="button">국민은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">국민은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">국민은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">산업은행</button>
+                            <button type="button">국민은행</button>
+                            <button type="button">산업은행</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-page" data-common-tab-page="2">
+                        <div class="table-list flex flex-wrap" data-table-list-col="3" data-common-theme="tm01">
+                            <button type="button" class="tm01">한화증권</button>
+                            <button type="button">삼성증권</button>
+                            <button type="button">미래에셋증권</button>
+                            <button type="button">한화증권</button>
+                            <button type="button">삼성증권</button>
+                            <button type="button">미래에셋증권</button>
+                            <button type="button">한화증권</button>
+                            <button type="button">삼성증권</button>
+                            <button type="button">미래에셋증권</button>
+                            <button type="button">한화증권</button>
+                            <button type="button">삼성증권</button>
+                            <button type="button">미래에셋증권</button>
+                            <button type="button">한화증권</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 우편번호 리스트 -->
+            <p class="guide-title">우편번호 리스트</p>
+            <div class="post-number-list">
+                <ul>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="post-number-item justify">
+                            <span class="num">04029</span>
+                            <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="g">
+
+            <!-- 우편번호 선택 여부 -->
+            <p class="guide-title">우편번호 선택 여부</p>
+            <div class="post-number-item selected justify">
+                <span class="num">04029</span>
+                <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+            </div>
+            <hr class="i">
+            <div class="post-number-item justify">
+                <span class="num">04029</span>
+                <span class="address">서울특별시 마포구 양화로7길 61-6 서교동</span>
+            </div>
+
+        </div>
+
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+            <!-- 페이지 탭 -->
+            <p class="guide-title">페이지 탭</p>
+        </div>
+            
+        <div class="page-tab" data-page-tab-col="2">
+            <ul>
+                <li><!-- 비활성화 -->
+                    <a href="#">도로명 주소</a>
+                </li>
+                <li class="active"><!-- 활성화 -->
+                    <a href="#">지번 주소</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="g">
+
+        <!-- 비주얼 영역 : 이미지 + 타이틀 + 서브타이틀 -->
+        <p class="guide-title">비주얼 : 이미지 + 타이틀 + 서브타이틀 or Nothing</p>
+        <div class="visual-state">
+            <span class="icon doc-check"></span>
+            <h1 class="title">금융거래 목적 확인서</h1>
+            <p class="desc">고객님께서는 단기간 다수 계좌개설로<br>
+                <strong>금융거래 목적 확인서를 작성</strong>해 주셔야 합니다</p>
+        </div>
+
+        <hr class="i">
+
+        <div class="visual-state">
+            <span class="icon idcard-check"></span>
+            <h1 class="title">신분증 진위여부 확인중...</h1>
+        </div>
+
+        <hr class="i">
+
+        <div class="visual-state">
+            <span class="icon videocall-reserv-complete"></span>
+            <h1 class="title">영상통화 인증</h1>
+        </div>
+
+        <hr class="i">
+
+        <div class="visual-state">
+            <span class="icon auth-fail"></span>
+            <h1 class="title">본인인증<em>(실명확인)</em>&nbsp;실패</h1>
+        </div>
+
+        <hr class="i">
+
+        <div class="visual-state">
+            <span class="icon complete"></span>
+            <h1 class="title">계좌개설완료</h1>
+        </div>
+
+        <hr class="g">
+
+        <div class="wrap">
+
+            <!-- 기타 -->
+            <p class="guide-title">기타</p>
+
+            <p class="remaining_time txt_red ar">남은시간 00:59</p>
+
+            <hr class="i">
+
+            <div class="idcard-explain justify">
+                <p class="idcard flex-dir-col">
+                    <span>주민등록증</span>
+                </p>
+                <span class="unit tt01">OR</span>
+                <p class="drive-license flex-dir-col">
+                    <span>운전면허증</span>
+                </p>
+            </div>
+
+            <hr class="i">
+
+            <div class="img-area-idcard">
+                <img src="***" alt="촬영된 이미지">
+            </div>
+
+            <hr class="i">
+
+            <strong class="tt01">영업일 09:00 – 17:30</strong>
+
+            <hr class="i">
+
+            <ul class="guide-list">
+                <li><p>FAQ <a href="nfa_faq.html" target="_blank">[새창]</a></p></li>
+                <li><p>영상통화 연결중 <a href="nfa_videocall_connecting.html" target="_blank">[새창]</a></p></li>
+            </ul>
+		</div>
+
+	</article>
+</body>
+</html>

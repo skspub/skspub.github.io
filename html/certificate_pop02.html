@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body>
+	<header class="top">
+		<h1 class="hidden">인증서발급/재발급</h1>
+	</header>
+	<div class="dim"></div>
+	<section class="popup_sec">
+        <div class="popup_bs">
+        	<div class="wrap_conp">
+	        	<h1>전화 승인 요청 중</h1>
+	        	<p>전화를 받으시고<br/>인증번호를 입력해 주세요</p>
+	        	<div class="pop_cbox"><span class="pop_cnum tt01">24680</span></div>
+	        	<div class="pop_cinfo clearfix">
+	        		<dl class="c1">
+	        			<dt>SK증권</dt>
+	        			<dd>1599-8245</dd>
+	        		</dl>
+	        		<div class="progress">
+					    <span>
+					        <em class="hidden">연결중</em>
+					    </span>
+					</div>
+	        		<dl class="c2">
+	        			<dt>김철수님</dt>
+	        			<dd>010-2548-****</dd>
+	        		</dl>
+	        	</div>
+	        </div>
+        	<div class="wrap_btnp">
+				<button type="button" class="btn_s1 tm01"><span class="btn_icon cancel"></span>승인취소</button>
+			</div>
+        </div>
+    </section>
+	<article>
+		<div class="step_state">
+			<em class="t_hidden">인증서발급 단계</em>
+			<ul class="clearfix">
+				<li><span class="end">1</span></li>
+				<li><span class="end">2</span></li>
+				<li><span class="end">3</span></li>
+				<li><span class="tm01">4</span></li>
+				<li><span>5</span></li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<ul class="list_link">
+				<li class="clearfix">
+					<em class="ag_point">해외 출국 확인</em>
+					<button type="button" class="btn_s3 tm03">전문보기</button>
+				</li>
+			</ul>
+		</div><!--//wrap-->
+		<div class="agree_tx">
+			<p>위의 내용에 대해 충분히 이해하고 동의하십니까?</p>
+			<input type="checkbox" id="agree_ck" class="input_ck" name="agree_ck" value=""/>
+			<label for="agree_ck">약관 확인 및 전체동의</label>
+		</div>
+		<div class="footer">
+			<div class="wrap_btnf">
+				<button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+			</div>
+		</div>
+	</article>
+	
+</body>
+</html>

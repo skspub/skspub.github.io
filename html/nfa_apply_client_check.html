@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+    <header class="top">
+        <h1 class="page_title">계좌 개설 신청서</h1>
+        <div class="step_state">
+            <em class="t_hidden">계좌개설 단계</em>
+            <ul class="clearfix">
+                <li><span class="end">1</span></li>
+                <li><span class="end">2</span></li>
+                <li><span class="end">3</span></li>
+                <li><span class="end">4</span></li>
+                <li><span class="tm01">5</span></li>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <div class="wrap">
+            <form>
+                <fieldset class="common-form">
+                    <ul class="input_line_group">
+                        <li>
+                            <span class="input_line">
+                                <select name="" class="select" title="거래목적 선택">
+                                    <option value="">거래목적</option>
+                                    <option value="">선택1</option>
+                                    <option value="">선택2</option>
+                                    <option value="">선택3</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_line">
+                                <select name="" class="select" title="거래자금출처 선택">
+                                    <option value="">거래자금출처</option>
+                                    <option value="">선택1</option>
+                                    <option value="">선택2</option>
+                                    <option value="">선택3</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_line">
+                                <select name="" class="select" title="직업 선택">
+                                    <option value="">직업</option>
+                                    <option value="">선택1</option>
+                                    <option value="">선택2</option>
+                                    <option value="">선택3</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_no_line">
+                                <span class="justify">
+                                    <span class="txt_darkGray">명의인과 실소유자 동일여부</span>
+                                </span>
+                                <span class="form-group ar">
+                                    <label for="same" class="btn-radio">
+                                        <input type="radio" name="rd12" id="same" checked="checked">
+                                        <span>같음</span>
+                                    </label>
+                                    <label for="different" class="btn-radio">
+                                        <input type="radio" name="rd12" id="different">
+                                        <span>다름</span>
+                                    </label>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_no_line">
+                                <span class="justify">
+                                    <span class="txt_darkGray">미국인 또는 조세목적상 해외거주 여부</span>
+                                </span>
+                                <span class="form-group ar">
+                                    <label for="no" class="btn-radio">
+                                        <input type="radio" name="rd1" id="no" checked>
+                                        <span>해당없음</span>
+                                    </label>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="wrap_btnf">
+                <button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

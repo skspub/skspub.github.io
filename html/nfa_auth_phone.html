@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+	<header class="top">
+		<h1 class="page_title">휴대폰 본인 인증</h1>
+        <div class="step_state">
+            <em class="t_hidden">계좌개설 단계</em>
+            <ul class="clearfix">
+                <li><span class="tm01">1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+            </ul>
+        </div>
+	</header>
+	<article>
+        <div class="wrap">
+            <form>
+                <fieldset class="common-form">
+                    <ul>
+                        <li>
+                            <span class="input_line">
+                                <input type="text" title="이름" name="userName" tabindex="1" placeholder="이름" class="input_hn tt01" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_line">
+                                <input type="tel" title="주민등록번호(13자리 숫자 입력)" name="idNum" tabindex="1" placeholder="주민등록번호(13자리 숫자 입력)" class="input_hn tt01" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_line">
+                                <select name="" class="select" title="통신사 선택">
+                                    <option value="">통신사를 선택해주세요</option>
+                                    <option value="">KT</option>
+                                    <option value="">SKT</option>
+                                    <option value="">LG</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="input_line">
+                                <input type="tel" title="휴대폰번호 (숫자만 입력)" name="phoneNum" tabindex="1" placeholder="휴대폰번호 (13자리 숫자 입력)" class="input_hn tt01" value="">
+                            </span>
+                        </li>
+                        <li data-common-ac-group="true">
+                            <span class="input_line justify">
+                                <span>필수동의사항</span>
+                                <label for="agree">
+                                    <span class="small">전체동의</span>
+                                    <input type="checkbox" id="agree" class="input_ck" name="" value="" data-common-all-check="false">
+                                </label>
+                            </span>
+                            <div class="agreement-group">
+                                <ul>
+                                    <li class="justify">
+                                        <span class="subject">개인정보 이용 및 제공 동의</span>
+                                        <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                                        <!--
+                                            아래 사황에 따라 2개의 클래스를 스위칭
+                                            전문보기 전 : btn-white
+                                            전문보기 후 : tm01 
+                                        -->
+                                    </li>
+                                    <li class="justify">
+                                        <span class="subject">고유식별번호 처리 관련 동의</span>
+                                        <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                                    </li>
+                                    <li class="justify">
+                                        <span class="subject">통신사 이용 약관 동의</span>
+                                        <button type="button" class="btn_s3 btn-white" data-common-ac-child="true">전문보기</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="input_line justify">
+                                <input type="tel" title="인증번호 입력" name="authNum" tabindex="1" placeholder="인증번호 입력" class="input_hn tt01" value="">
+                                <button class="btn_s3 tm01 nowrap">인증번호 요청</button>
+                            </span>
+                            <p class="remaining_time txt_red ar">남은시간 00:59</p>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="wrap_btnf">
+                <button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+            </div>
+        </div>
+	</article>
+</body>
+</html>

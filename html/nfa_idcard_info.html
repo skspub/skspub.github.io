@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+	<header class="top">
+		<h1 class="page_title">신분증 제출</h1>
+        <div class="step_state">
+            <em class="t_hidden">계좌개설 단계</em>
+            <ul class="clearfix">
+                <li><span class="end">1</span></li>
+                <li><span class="end">2</span></li>
+                <li><span class="tm01">3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+            </ul>
+        </div>
+	</header>
+	<article>
+        <div class="wrap">
+           <p class="description ac">인식된 신분증의 정보가 올바른지 확인 후, <strong>잘못 인식된 정보</strong>는 수정해 주세요</p>
+            <div class="img-area-idcard">
+                <img src="***" alt="촬영된 이미지">
+            </div>
+            <form>
+                <fieldset class="common-form">
+                    <ul>
+                       <li>
+                           <span class="input_line">
+                               <input type="text" title="이름 입력" name="userName" tabindex="1" placeholder="이름" class="input_hn tt01" value="">
+                           </span>
+                       </li>
+                       <li>
+                           <span class="input_line justify col2">
+                               <!-- <input type="tel" title="주민등록번호 (13자리 숫자 입력)" name="idNumber" tabindex="1" placeholder="주민등록번호 (13자리 숫자 입력)" class="input_hn tt01" value=""> -->
+                               <input type="tel" title="주민등록번호 6자리" name="idNumber" tabindex="1" placeholder="주민등록번호 (앞 6자리 입력)" class="input_hn tt01" value="">
+                               <span class="unit">-</span>
+                               <input type="password" title="뒤 7자리" name="idNumber" tabindex="1" placeholder="주민등록번호 (뒤 7자리 입력)" class="input_hn tt01" value="">
+                           </span>
+                       </li>
+                       <li>
+                           <span class="input_line">
+                               <input type="text" title="발급일자" name="id" tabindex="1" placeholder="발급일자" class="input_hn tt01" value="">
+                           </span>
+                       </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="wrap_btnh">
+                <button type="button" class="btn_s1 tm03">다시촬영<span class="btn_icon camera"></span></button>
+                <button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+            </div>
+        </div>
+	</article>
+</body>
+</html>

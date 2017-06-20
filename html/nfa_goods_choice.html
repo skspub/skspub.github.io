@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+	<header class="top">
+		<h1 class="page_title">상품선택 및 약관동의</h1>
+        <div class="step_state">
+            <em class="t_hidden">계좌개설 단계</em>
+            <ul class="clearfix">
+                <li><span class="end">1</span></li>
+                <li><span class="tm01">2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+            </ul>
+        </div>
+	</header>
+	<article>
+        <div class="wrap">
+            <h2 class="sub_title ac"><span>개설 상품 선택 (복수 선택가능)</span></h2>
+            <form>
+                <fieldset class="common-form">
+                    <ul data-common-check-group="1">
+                        <li>
+                           <span class="input_line">
+                               <label for="gcCMA" class="justify">
+                                   <strong>CMA</strong>
+                                   <input type="checkbox" id="gcCMA" class="input_ck" name="gcCMA" value="" data-common-check="">
+                               </label>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="input_line">
+                               <label for="gcAll" class="justify">
+                                   <strong>종합 <span>(주식, 채권, ELS 등)</span></strong>
+                                   <input type="checkbox" id="gcAll" class="input_ck" name="gcAll" value="" data-common-check="">
+                               </label>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="input_line">
+                               <label for="gcFin" class="justify">
+                                   <strong>금융상품 <span>(채권, ELS, 펀드 등)</span></strong>
+                                   <input type="checkbox" id="gcFin" class="input_ck" name="gcFin" value="" data-common-check="">
+                               </label>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="input_line">
+                               <label for="gcRobo" class="justify">
+                                   <strong>로보어드바이저 전용계좌</strong>
+                                   <input type="checkbox" id="gcRobo" class="input_ck" name="gcRobo" value="" data-common-check="">
+                               </label>
+                           </span>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="wrap_btnf">
+                <button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+            </div>
+        </div>
+	</article>
+</body>
+</html>

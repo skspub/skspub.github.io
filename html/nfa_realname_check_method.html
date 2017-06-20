@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+	<header class="top">
+		<h1 class="page_title">실명 확인방식을 선택해 주세요</h1>
+	</header>
+	<article>
+        <div class="wrap">
+            <form>
+                <fieldset class="common-form mt0">
+                    <div class="realname-check">
+                        <ul class="flex justify-center">
+                            <li>
+                                <label for="rnChkVideo" class="rc-video align-stretch">
+                                    <input type="radio" name="rnChk" id="rnChkVideo" checked>
+                                    <div class="flex-dir-col justify-start">
+                                        <strong class="subject">영상통화인증</strong>
+                                        <span>상담원과 영상통화<br>본인확인</span>
+                                        <div class="possible_time flex-dir-col">
+                                            <strong class="small-subject">가능시간</strong>
+                                            <span>09:00 - 17:30</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <button type="button" class="btn_s3 btn-white">안내사항</button>
+                            </li>
+                            <li>
+                                <label for="rnChkTransfer" class="rc-transfer align-stretch">
+                                    <input type="radio" name="rnChk" id="rnChkTransfer">
+                                    <div class="flex-dir-col">
+                                        <strong class="subject">소액이체인증</strong>
+                                        <span>본인계좌에서 개설예정<br>계좌로 소액 이체</span>
+                                        <div class="possible_time">
+                                            <strong class="small-subject">가능시간</strong>
+                                            <span>365일, 24시간<br>(23:30 - 00:30 제외)</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <button type="button" class="btn_s3 btn-white">안내사항</button>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+	</article>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<script src="../common/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				// menu name/////////////////////////////////////////////////////////////////////////////////
+				//$("a[href^='../VD/html/benefit/02_b08']").prepend("<span class='wooc'>온라인쿠폰</span>");
+				//$("a[href^='../VD/html/benefit/02_b09']").prepend("<span class='wooc'>포인트쓰기_포인트특권</span>");
+				//$("a[href^='../VD/html/benefit/02_b10']").prepend("<span class='wooc'>포인트쌓기_광고,앱설치</span>");
+				//$("a[href^='../VD/html/benefit/02_b11']").prepend("<span class='wooc'>포인트쌓기_적립신청</span>");
+				//$("a[href^='../VD/html/benefit/02_b12']").prepend("<span class='wooc'>포인트쌓기_제휴카드</span>");
+				// menu name/////////////////////////////////////////////////////////////////////////////////
+				$("a").attr("target", "mainFrame");
+				$("a").each(function() {
+					var temp = $(this).attr("href");
+					//var file_name = temp.split("/")[4];
+					$(this).append(temp);
+					var new_win = $(this).clone().attr('target', '_blank').attr('tabIndex', '-1').text('[새창]').css({
+						margin : '0 0 0 5px',
+						color : '#6197C0'
+					});
+					$(this).parent().append(new_win);
+				}).bind('click focus', function(event) {
+					$("a").removeClass('on');
+					$(this).addClass('on');
+				});
+				$("dt").bind('click focus', function() {
+					if ($(this).next("dd").hasClass("on")) {
+						$("dd").removeClass("on");
+					} else {
+						$("dd").removeClass("on");
+						$(this).next("dd").addClass("on");
+					};
+				});
+			});
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body, form, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fieldset, input, td {
+				margin: 0;
+				padding: 0;
+				font-family: 돋움, Dotum, sans-serif;
+				font-style: normal;
+				font-size: 13px;
+				line-height: 14px;
+			}
+			body {
+				background-color: #fff;
+				padding-bottom: 30px;
+			}
+			ol, ul, dl {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			h1 {
+				width: 100%;
+				height: 35px;
+				padding: 10px 0 10px 15px;
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+				text-align: left;
+				letter-spacing: 1px;
+				background-color: #000;
+				box-sizing: border-box;
+			}
+			h1 span {
+				display: inline-block;
+				margin-top: 0px;
+				margin-right: -4px;
+				padding: 1px 3px;
+				border-radius: 3px;
+				color: #fff;
+				font-weight: normal;
+				font-size: 10px;
+			}
+			h1 span.red {
+				background-color: red;
+				margin-left: 7px;
+			}
+			h1 span.orange {
+				background-color: orange;
+			}
+			h1 span.blue {
+				background-color: blue;
+			}
+			dt {
+				font-size: 14px;
+				font-weight: bold;
+				padding: 10px;
+				border-top: 2px solid #ccc;
+				cursor: pointer;
+			}
+			dd {
+				display: none;
+			}
+			dd.on {
+				display: block !important;
+			}
+			ul {
+				margin: 0px 20px 20px 30px;
+			}
+			li {
+				position: relative;
+				margin-bottom: 5px;
+			}
+			a, a:hover, a:visited {
+				color: #999;
+				text-decoration: none;
+			}
+			a span {
+				margin-right: 1px;
+				display: inline-block;
+				color: #999;
+				font-size: 11px;
+			}
+			li.sub a span {
+				margin-left: -13px;
+			}
+			span.update {margin-right:10px;color:#005F8F;;}
+			a span.bl {
+				display: block;
+				position: absolute;
+				top: 16px;
+				left: -10px;
+				width: 6px;
+				height: 6px;
+				border-top: 0 none;
+				border-right: 0 none;
+				border-left: 1px;
+				border-bottom: 1px;
+				border-style: dotted;
+				border-color: #333;
+			}
+			a.on {
+				font-weight: bold;
+				letter-spacing: 0px
+			}
+			li.done a {
+				color: black;
+			}
+			li.done span {
+				color: red;
+			}
+			li.done span.bl {
+				color: #333;
+			}
+			li.done a.pop span {
+				color: orange;
+			}
+			li.modify span {
+				color: blue;
+			}
+			.off {
+				display: block;
+			}
+			li.sub {background-color:#e5edf8;font-size:13px;font-weight:bold;padding:5px 0}
+			li.sub span {display:block;margin-left:-14px;color:#005f8f}
+			.wooc {color:#ff9933;display: block}
+		</style>
+	</head>
+	<body>
+		<h1>인증서발급 재발급</h1>
+		<dl>
+			<dt>
+				Style Guide &nbsp;<span style="font-size:12px;">(<span style="color:blue"> </span>)</span>
+			</dt>
+			<dd>
+				<ul>
+					<li class="done">
+						<a href="list_sample.html"> </a>
+					</li>
+					<li class="done">
+						<a href="list_sample2.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				00. 메인
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="main.html"> </a>
+					</li>
+					<!--
+					<li>
+						<a href="main_pop01.html"> </a>
+					</li>
+					<li>
+						<a href="main_pop02.html"> </a>
+					</li>
+					<li>
+						<a href="main_pop03.html"> </a>
+					</li>
+					<li>
+						<a href="main_pop04.html"> </a>
+					</li>-->
+				</ul>
+			</dd>
+			<dt>
+				01. 로그인
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="login.html"> </a>
+					</li>
+					<li>
+						<a href="login_certification01.html"> </a>
+					</li>
+					<li>
+						<a href="login_certification02.html"> </a>
+					</li>
+					<li>
+						<a href="login_certification03.html"> </a>
+					</li>
+					<li>
+						<a href="login_bio01.html"> </a>
+					</li>
+					<li>
+						<a href="login_bio02.html"> </a>
+					</li>
+					<li>
+						<a href="login_bio03.html"> </a>
+					</li>
+					<li>
+						<a href="login_bio04.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				02. 인증서발급재발급
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="certificate_01.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_02.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_03.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_04.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_05.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_06.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_07.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_08.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_09.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_10.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_11.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_12.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_pop01.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_pop02.html"> </a>
+					</li>
+					<li>
+						<a href="certificate_pop03.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				03. 가져오기
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="get_certificate_from_pc.html"> </a>
+					</li>
+					<li>
+						<a href="get_certificate_from_pc_pop.html"> </a>
+					</li>
+					<li>
+						<a href="get_certificate_from_phone.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				04. 내보내기
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="out_certificate_none.html"> </a>
+					</li>
+					<li>
+						<a href="out_certificate_select.html"> </a>
+					</li>
+					<li>
+						<a href="out_certificate_password.html"> </a>
+					</li>
+					<li>
+						<a href="out_certificate_number.html"> </a>
+					</li>
+					<li>
+						<a href="out_certificate_pop.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				05. 타기관 인증서 등록
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="external_certificate_01.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_02.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_03.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_04.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_05.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_06.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_07.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_08.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_09.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_10.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_11.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_pop01.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_pop02.html"> </a>
+					</li>
+					<li>
+						<a href="external_certificate_pop03.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				06. 인증서 관리
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="management_certification01.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification02.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification03.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification04.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification05.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification06.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification07.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification08.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification09.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification10.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification11.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification12.html"> </a>
+					</li>
+					<li>
+						<a href="management_certification_pop01.html"> </a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+		<h1>비대면 계좌개설</h1>
+		<dl>
+			<dt>
+				01. 계좌개설(공통)(STEP1~3)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>메인</span><a href="nfa_main.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>계좌개설 이용안내</span><a href="nfa_guide.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>유의사항 (이용안내)</span><a href="nfa_guide2.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>휴대폰 본인인증(고객 기본인증)</span><a href="nfa_auth_phone.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>상품선택약관동의 (메인)</span><a href="nfa_goods_choice.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>상품선택약관동의 (약관 및 동의서)</span><a href="nfa_goods_choice_agree.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>상품선택약관동의 (상품마케팅 선택 동의)</span><a href="nfa_goods_choice_marketing_agree.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>실명확인방식선택</span><a href="nfa_realname_check_method.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>신분증제출 (메인)</span><a href="nfa_idcard_submit.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>신분증제출 (정보입력)</span><a href="nfa_idcard_info.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				02. 영상통화 인증(STEP4~5)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>계좌개설 신청서 (고객확인)</span><a href="nfa_apply_client_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>계좌개설 신청서 (비밀번호 입력)</span><a href="nfa_apply_password_check.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				03. 금융기관계좌이체인증(STEP4~5)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>계좌인증</span><a href="nfa_account_auth.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>본인계좌확인</span><a href="nfa_myaccount_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>계좌개설신청서(고객확인)</span><a href="nfa_apply_client_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>비밀번호입력</span><a href="nfa_apply_password_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>주소찾기(도로명주소)</span><a href="nfa_roadname_address_find.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>상세주소입력</span><a href="nfa_roadname_address_detail.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>표준도로명주소 확인</span><a href="nfa_roadname_std_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>주소찾기(지번주소)</span><a href="nfa_area_address_find.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>번지입력</span><a href="nfa_area_address_detail.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>표준도로명주소 변환</span><a href="nfa_area_std_check.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>상세주소입력</span><a href="nfa_area_address_detail_2.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				04. 계좌개설(공통)(STEP6)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>금융거래목적 확인서</span><a href="nfa_confirm_transaction_doc.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>신분증 진위여부 확인</span><a href="nfa_idcard_fake_verify.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				05. 영상통화 인증(STEP7)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>영상통화 인증</span><a href="nfa_videocall_auth.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>영상통화예약완료</span><a href="nfa_videocall_reserve_ok.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>통화 연결중</span><a href="nfa_videocall_connecting.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				06. 금융기관계좌이체 인증(STEP7)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>본인인증실패</span><a href="nfa_auth_fail.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>개좌개설완료</span><a href="nfa_temp_account_complete.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				07. 계좌개설(공통)(STEP8)
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>스마트 계좌개설완료</span><a href="nfa_smart_account_complete.html"> </a>
+					</li>
+					<li>
+						<span class='wooc'>로보어드바이저 계좌개설완료</span><a href="nfa_robo_account_complete.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				08. 개설내역보기 / 계좌개설이어하기
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>계좌개설이어하기</span><a href="nfa_accounting_proceed.html"> </a>
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				09. 기타
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<span class='wooc'>자주하는 질문</span><a href="nfa_faq.html"> </a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body>
+	<header class="top">
+		<h1></h1>
+	</header>
+	<article>
+		<div class="wrap_btnf">
+			<button type="button" class="btn_s1 tm01"><span class="btn_icon check"></span>확인</button>
+		</div>
+		<div class="wrap_btnf" style="margin-top:10px;">
+			<button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+		</div>
+		<div class="wrap_btnh clearfix" style="margin-top:10px;">
+			<button type="button" class="btn_s1 tm03"><span class="btn_icon cancel"></span>취소</button>
+			<button type="button" class="btn_s1 tm01"><span class="btn_icon check"></span>확인</button>
+		</div>
+		<div class="wrap_btnp" style="margin-top:10px;margin-bottom:10px;">
+			<button type="button" class="btn_s1 tm01"><span class="btn_icon cancel"></span>승인취소</button>
+		</div>
+		<button type="button" class="btn_s2 tm01">인증번호 재요청</button>
+		<button type="button" class="btn_s2 tm04">인증번호 요청</button>
+		<button type="button" class="btn_s3 tm03">전문보기</button>
+		<button type="button" class="btn_s3 tm04">승인요청</button>
+		<div style="margin-top:10px;">
+			<button type="button" class="btn_s4">공인인증서폐기</button>
+		</div>
+
+		<ul style="margin-top:20px;">
+			<li>
+				<input type="radio" id="certification01" class="input_rd" name="certification" value="">
+				<label for="certification01">공인인증서</label>
+			</li>
+			<li>
+				<input type="radio" id="certification02" class="input_rd" name="certification" value="">
+				<label for="certification02">바이오</label>
+			</li>
+			<li>
+				<input type="radio" id="certification03" class="input_rd" name="certification" value="">
+				<label for="certification03">아이디</label>
+			</li>
+		</ul>
+
+		<ul style="margin-top:10px;">
+			<li>
+				<input type="checkbox" id="save_id" class="input_ck" name="save_ck" value="">
+				<label for="save_id">아이디 저장</label>
+			</li>
+			<li>
+				<input type="checkbox" id="save_ct" class="input_ck" name="save_ck" value="">
+				<label for="save_ct">공인인증</label>
+			</li>
+		</ul>
+
+		<ul style="margin-top:10px;">
+			<li>
+				<span class="input_line">
+					<input type="text" title="사용자 ID" name="id" tabindex="1" placeholder="" class="input_hn tt01" value="">
+					<label class="lab">사용자 ID</label>
+				</span>
+			</li>
+			<li>
+				<span class="input_line">
+					<input type="password" title="비밀번호" name="p_password" tabindex="1" placeholder="비밀번호 input" class="input_hn tt01" value="">
+				</span>
+			</li>
+			<li>
+				<span class="input_line">
+					<input type="password" title="비밀번호 readonly" name="p_password" tabindex="1" placeholder="비밀번호 readonly" class="input_hn tt01" value="" readonly>
+				</span>
+			</li>
+			<li>
+				<span class="input_line flex align-center">
+					<!--입력전--><em class="pre-input">비밀번호 block Type</em>
+					<!--입력후--><em class="aft-input pb">●●●●</em>
+				</span>
+			</li>
+			<li>
+				<span class="input_line flex align-center">
+					<em class="em-select">Select block Type</em>
+				</span>
+			</li>
+			<li>
+				<span class="input_line flex align-center">
+					<em class="em-select">Select block Type</em>
+					<em class="em-select">Select block Type</em>
+				</span>
+			</li>
+			<!--
+			<li>
+				<span class="input_line">
+					<input type="password" title="비밀번호 disabled" name="p_password" tabindex="1" placeholder="비밀번호" class="input_hn tt01" value="" disabled>
+				</span>
+			</li>
+			-->
+		</ul>
+
+		<dl class="list_input" style="margin-top:20px;">
+			<!--
+			<dt>OTP생성 일회용 비밀번호 Input Type</dt>
+			<dd>
+				<span class="input_box">
+					<input type="password" class="input_pw tt01 sp" value="" placeholder="●●●●">
+				</span>
+			</dd>
+			-->
+			<dt>OTP생성 일회용 비밀번호 Div Type</dt>
+			<dd>
+				<span class="input_box sp">
+					<em class="pl">●●</em><em class="pw">●●</em><em class="pb">●●</em>
+				</span>
+			</dd>
+			<!--
+			<dt>공인인증서 비밀번호 Input Type readonly</dt>
+			<dd>
+				<span class="input_box">
+					<input type="password" class="input_pw tt01" value="" placeholder="영문+숫자+특수문자 8자리 이상" readonly/>
+				</span>
+			</dd>
+			<dt>공인인증서 비밀번호 Input Type disabled</dt>
+			<dd>
+				<span class="input_box">
+					<input type="password" class="input_pw tt01" value="" placeholder="영문+숫자+특수문자 8자리 이상" disabled/>
+				</span>
+			</dd>
+			-->
+			<dt>공인인증서 비밀번호 Div Type</dt>
+			<dd>
+				<span class="input_box sp flex align-center justify-center">
+					<em class="pb">●●</em><em class="plt">영문+숫자+특수문자 8자리 이상</em>
+				</span>
+			</dd>
+			<dt>보안카드 일련번호 마지막 4자리</dt>
+			<dd class="input_box clearfix">
+				<span class="certifi_col sp"><em class="pw">●●●●</em></span>
+				<span class="certifi_col sp">
+					<input type="password" class="input_pw tt01 sp" value="" placeholder="●●●●" readonly>
+				</span>
+			</dd>
+			<dt>보안카드 비밀번호</dt>
+			<dd class="col_group">
+				<div class="clearfix">
+					<span class="certifi_col"><em class="tt01">25</em> <span class="ctt">앞 두자리</span></span>
+					<span class="certifi_col"><em class="tt01">39</em> <span class="ctt">뒷 두자리</span></span>
+				</div>
+				<div class="clearfix">
+					<span class="certifi_col sp"><em class="pl">●●</em><em class="pw">●●</em></span>
+					<span class="certifi_col sp"><em class="pw">●●</em><em class="pl">●●</em></span>
+				</div>
+			</dd>
+		</dl>
+
+		<ul class="list_link" style="margin-top:20px;">
+			<li class="in_tb">
+				<em class="tit">전화 채널 인증</em>
+				<div class="row_group">
+					<div class="certifi_row clearfix">
+						<span class="tit"><em class="b1"></em>휴대폰</span>
+						<span class="num">010-5417-5687</span>
+						<button class="btn_s3 tm04">승인요청</button>
+					</div>
+					<div class="certifi_row clearfix">
+						<span class="tit"><em class="b2"></em>자택</span>
+						<span class="num">010-5417-5687</span>
+						<button class="btn_s3 tm04">승인요청</button>
+					</div>
+					<div class="certifi_row clearfix off">
+						<span class="tit"><em class="b3"></em>직장</span>
+						<span class="num">등록안됨</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="t_area">
+				<em class="tit">영업부에서 부여한 1회용 인증번호</em>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="t_area">
+				<em class="tit">해외 출국 확인</em>
+				</a>
+				<p class="text">해외 체류 및 거주로 인해 추가 인증이 불가한 경우 해외 출국 확인을 통해 인증없이 업무가 가능합니다.</p>
+			</li>
+		</ul>
+
+		<h2 class="t_line">인증서 선택</h2>
+		<ul class="list_state">
+			<li>
+				<a href="#" class="t_area">
+					<div class="state_ic"><span class="state_tx tm01">정상</span></div>
+					<dl>
+						<dt>김철수 김철수김철수김철수김철수김철수김철수</dt>
+						<dd>증권/보험용 <span class="splt"></span> SignKorea</dd>
+						<dd>만료일 <span class="tt01">2016.12.30</span></dd>
+						<dd>0020048201509103751765</dd>
+					</dl>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="t_area">
+					<div class="state_ic"><span class="state_tx tm04">만료</span></div>
+					<dl>
+						<dt>김철수</dt>
+						<dd>증권/보험용 <span class="splt"></span> SignKorea</dd>
+						<dd>만료일 <span class="tt01">2016.12.30</span></dd>
+						<dd>0020048201509103751765</dd>
+					</dl>
+				</a>
+			</li>
+			<li>
+				<div class="state_ic"><span class="state_tx tm02">만료예정</span></div>
+				<dl>
+					<dt>김철수</dt>
+					<dd>증권/보험용 <span class="splt"></span> SignKorea</dd>
+					<dd>만료일 <span class="tt01">2016.12.30</span></dd>
+					<dd>0020048201509103751765</dd>
+				</dl>
+				<button type="button" class="btn_s4">공인인증서폐기</button>
+			</li>
+		</ul>
+		<div class="list_state off" style="margin-top:20px;">
+			<div class="state_ic"><span class="state_tx tm02">만료예정</span></div>
+			<dl>
+				<dt>김철수</dt>
+				<dd>증권/보험용 <span class="splt"></span> SignKorea</dd>
+				<dd>만료일 <span class="tt01">2016.12.30</span></dd>
+				<dd>0020048201509103751765</dd>
+			</dl>
+		</div>
+		<div class="row_group info">
+			<dl class="certifi_row">
+				<dt>버전</dt>
+				<dd>V3</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>일련번호</dt>
+				<dd>0654QWE</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>서명 알고리즘</dt>
+				<dd>SHA235J2L</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>발급자</dt>
+				<dd>CN=SIGNKOREA CA2,</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>발급일</dt>
+				<dd>17-04-10 15:07:57</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>만료일</dt>
+				<dd>17-04-10 15:07:57</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>주체</dt>
+				<dd>CN=김철수, OU=HTS,, OU=…</dd>
+			</dl>
+			<dl class="certifi_row">
+				<dt>인증서정책</dt>
+				<dd>증권/보험용</dd>
+			</dl>
+		</div>
+		<div style="margin-top:20px;">
+			<span class="icon lock"><em class="tm01 check"></em></span>
+			<span class="icon disk"><em class="tm01 feel"></em></span>
+			<span class="icon sk"><em class="tm01 feel"></em></span>
+		</div>
+	</article>
+
+</body>
+</html>

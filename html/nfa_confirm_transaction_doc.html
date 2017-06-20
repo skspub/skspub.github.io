@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+    <header class="top">
+        <div class="visual-state">
+            <span class="icon doc-check"></span>
+            <h1 class="title">금융거래 목적 확인서</h1>
+            <p class="desc">고객님께서는 단기간 다수 계좌개설로<br>
+                <strong>금융거래 목적 확인서를 작성</strong>해 주셔야 합니다</p>
+        </div>
+    </header>
+    <article>
+        <div class="wrap">
+            <form>
+                <fieldset class="common-form">
+                    <ol class="number-list">
+                        <li>
+                            <span class="subject">타인으로부터 통장 대여 요청을 받은 사실이 있습니까?</span>
+                            <span class="form-group ar">
+                                <label for="no1" class="btn-radio">
+                                    <input type="radio" name="rd1" id="no1" checked="">
+                                    <span>아니오</span>
+                                </label>
+                                <label for="yes1" class="btn-radio">
+                                    <input type="radio" name="rd1" id="yes1">
+                                    <span>예</span>
+                                </label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="subject">타인으로부터 신용등급상향, 대출 등의 목적으로 계좌개설을 요청 받은 사실이 있습니까?</span>
+                            <span class="form-group ar">
+                                <label for="no1" class="btn-radio">
+                                    <input type="radio" name="rd2" id="no1" checked="">
+                                    <span>아니오</span>
+                                </label>
+                                <label for="yes1" class="btn-radio">
+                                    <input type="radio" name="rd2" id="yes1">
+                                    <span>예</span>
+                                </label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="subject">03. 본 확인서 내용을 충분히 이해하고 틀림없이 기재하였습니다.</span>
+                            <span class="rounded-input">
+                                <input type="text" name="userName" id="" class="input_hn tt01" title="고객명 입력" placeholder="고객명 입력" value="">
+                            </span>
+                        </li>
+                    </ol>
+                </fieldset>
+            </form>
+            <p class="description ac">통장/카드 등을 타인에게 양도하여 범죄에 이용되는 경우, <strong>미성년자 여부와 관계없이 민•형사상 책임</strong>을 질 수 있습니다</p>
+        </div>
+        <div class="footer">
+                <div class="wrap_btnf">
+                    <button type="button" class="btn_s1 tm01">다음<span class="btn_icon next"></span></button>
+                </div>
+            </div>
+    </article>
+</body>
+</html>

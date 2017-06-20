@@ -1,0 +1,100 @@
+/* 색테마 */ 
+.tm01 {background: #00d1ea !important;}
+.tm02 {background: #ffb300 !important;}
+.tm03 {background: #c1c1c1 !important;}
+.tm04 {background: #6b6b6b !important;}
+.tt01, em.pb {color: #00d1ea !important;}
+
+.input_rd {appearance:none;-webkit-appearance:none;-moz-appearance:none;border: 0;border-radius: 0;display: inline-block;width:20px;height:20px;background: url("../../images/back_radio.png") no-repeat;background-position: 0 -20px;background-size:100%;-webkit-appearance:background-size:100%;-moz-appearance:background-size:100%;vertical-align: middle;}
+.input_rd:checked {background-position: 0 0;}
+.input_rd:checked + label {color:#292929;}
+.input_ck {appearance:none;-webkit-appearance:none;-moz-appearance:none;border: 0;border-radius: 0;display: inline-block;width:26px;height:26px;background: url("../../images/back_check.png") no-repeat;background-position: 0 -26px;background-size:100%;-webkit-appearance:background-size:100%;-moz-appearance:background-size:100%;vertical-align: middle;}
+.input_ck:checked {background-position: 0 0;}
+.input_rd + label {margin-left: 8px;color: #6b6b6b}
+.input_ck + label {margin-left: 5px;color: #6b6b6b}
+
+/*progress*/
+/*34% {background: rgb(178, 241, 249);}
+66% {background: rgb(127, 232, 244);}
+100% {background: rgb(0, 209, 234);}*/
+@-webkit-keyframes pulse {
+    0% {}
+    34% {opacity: 0.3;}
+    66% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@keyframes pulse {
+    0% {}
+    34% {opacity: 0.3;}
+    66% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+.progress {width: 40px; 
+	display: -webkt-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.progress:before, .progress:after, .progress span {display: inherit; width: 10px; height: 10px; border-radius: 5px; background: rgb(0, 209, 234);}
+.progress span {text-indent: 200%; overflow: hidden;}
+.progress:before, .progress:after {content: '';}
+.progress:before {
+	opacity: 1;
+	-webkit-animation: pulse 1.5s 0s infinite;
+			animation: pulse 1.5s 0s infinite;
+}
+.progress span {
+	opacity: 0.5;
+	-webkit-animation: pulse 1.5s 0.5s infinite;
+			animation: pulse 1.5s 0.5s infinite;
+}
+.progress:after {
+	opacity: 0.3;
+	-webkit-animation: pulse 1.5s 1s infinite;
+			animation: pulse 1.5s 1s infinite;
+}
+
+/* 준비사항 */
+.ico_list li.idcard:before {background: url(../../images/icon_idcard.png) no-repeat;}
+.ico_list li.phone:before {background: url(../../images/icon_phone.png) no-repeat;}
+.ico_list li.account:before {background: url(../../images/icon_account.png) no-repeat;}
+
+/* 버튼형 라디오 버튼 */
+.btn-radio > input[type=radio]:checked + span {background-color: #00d1ea;}
+
+/* 실명인증 방식 선택 */
+.realname-check label input[type=radio]:checked + div {background-color: #00d1ea;}
+
+/* 신분증 제출 설명 그림 */
+.idcard-explain > p:before {background:url(../../images/sp_idcard.png) no-repeat;}
+
+/* radio-group */
+.radio-group label input[type=radio]:checked + span {background-color: #00d1ea; border-color: #00a7bb;}
+
+/* tab */
+.tab-wrap .tab ul li button.tm01 {border-color: #00a7bb;}
+
+/* page tab */
+.page-tab ul li.active a {border-top: 3px solid #00d1ea; color: #00d1ea;}
+
+/* 주소 리스트 */
+.post-number-item .num {color: #00d1ea;}
+
+/* visual state */
+.visual-state .icon.doc-check:after,
+.visual-state .icon.idcard-check:after,
+.visual-state .icon.videocall-reserv-complete:after,
+.visual-state .icon.complete:after {background-color: #00d1ea;}
+
+/* 영상통화 연결중 */
+body.video-call {background-color: #00a7bb;}
+.video-call .icon-calling {background-color: #00d1ea;}
+
+/* button 요소 */
+.btn_s3.complete {border: 1px solid #00d1ea; color: #00d1ea;}
+
+/* faq */
+.faq dt.active button {color: #00d1ea; background-image: url(../../images/icon_arrow_up_point.png);}
+
+/* button checkbox */
+/*label.checkbox-btn input[type=checkbox]:checked + span {border: 1px solid #00d1ea; background-color: #00d1ea; color: #fff;}*/

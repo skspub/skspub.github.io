@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body> 
+    <header class="top">
+        <h1 class="hidden">이용안내</h1>
+    </header>
+    <div class="wrap">
+        <section class="sec">
+            <header>
+                <h2 class="title"><span>개설완료 계좌내역</span></h2>
+            </header>
+            <div class="pdl0">
+                <div class="tbl-wrap">
+                    <table class="tbl-stripe">
+                        <caption>계좌번호, 개설상품, 완료여부에 관한 표입니다.</caption>
+                        <colgroup>
+                            <col style="width: 41%;">
+                            <col style="width: 32%;">
+                            <col style="width: 27%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="row">계좌번호</th>
+                                <th scope="row">개설상품</th>
+                                <th scope="row">
+                                    <span class="hidden">완료여부</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ac">101-797057</td>
+                                <td class="ac">종합</td>
+                                <td class="ac">
+                                    <button type="button" class="btn_s3 complete">완료</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ac">101-790998</td>
+                                <td class="ac">종합</td>
+                                <td class="ac">
+                                    <button type="button" class="btn_s3 complete">완료</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrap gray">
+        <!-- 계좌 개설내역이 있을 때 : start -->
+        <section class="sec">
+            <header>
+                <h2 class="title"><span>진행중 계좌개설내역</span></h2>
+            </header>
+            <div class="pdl0">
+                <div class="step_state">
+                    <em class="t_hidden">진행중인 계좌개설내역 단계</em>
+                    <ul class="clearfix">
+                        <li><span class="end">1</span></li>
+                        <li><span class="tm01">2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="sec ac">
+            <header>
+                <h2 class="title"><span>상품선택 및 약관동의</span></h2>
+            </header>
+            <div class="pdl0">
+                <button type="button" class="btn_s3 tm03">처음부터 다시하기</button>
+                <button type="button" class="btn_s3 tm01">계좌개설 이어하기</button>
+            </div>
+        </section>
+        <!--// 계좌 개설내역이 있을 때 : end -->
+
+        <!-- 계좌 개설내역이 없을 때 : start -->
+        <section class="sec">
+            <header>
+                <h2 class="title"><span>진행중 계좌개설내역</span></h2>
+            </header>
+            <div class="pdl0">
+                <div class="subject-list">
+                    <dl>
+                        <dt>상태</dt>
+                        <dd>진행내역이 없습니다.</dd>
+                    </dl>
+                </div>
+                <div class="ac mt20">
+                    <button type="button" class="btn_s3 tm01">확인</button>
+                </div>
+            </div>
+        </section>
+        <!-- 계좌 개설내역이 없을 때 : end -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body>
+	<header class="top">
+		<h1 class="hidden">인증서 내보내기</h1>
+	</header>
+	<article>
+		<div class="step_state">
+			<em class="t_hidden">인증서 내보내기 단계</em>
+			<ul class="clearfix">
+				<li><span class="end">1</span></li>
+				<li><span class="end">2</span></li>
+				<li><span class="tm01">3</span></li>
+			</ul>
+		</div>
+
+		<div class="list_state off">
+			<div class="state_ic"><span class="state_tx tm01">정상</span></div>
+			<dl>
+				<dt>김철수</dt>
+				<dd>증권/보험용 <span class="splt"></span> SignKorea</dd>
+				<dd>만료일 <span class="tt01">2016.12.30</span></dd>
+				<dd>0020048201509103751765</dd>
+			</dl>
+		</div>
+
+		<div class="wrap">
+			<dl class="list_input">
+				<dt>인증번호</dt>
+				<dd>
+					<span class="input_box cert_num">
+						<!-- <input type="tel" class="input_hn tt01 sp" title="인증용 번호 첫 4자리" value="1234" readonly />
+						<span class="unit">-</span>
+						<input type="tel" class="input_hn tt01 sp" title="인증용 번호 중간 4자리" value="4567" readonly />
+						<span class="unit">-</span>
+						<input type="tel" class="input_hn tt01 sp" title="인증용 번호 마지막 4자리" value="4523" readonly /> -->
+						<p class="fake-input justify-center tt01">1234</p>
+						<span class="unit">-</span>
+						<p class="fake-input justify-center tt01">1234</p>
+						<span class="unit">-</span>
+						<p class="fake-input justify-center tt01">1234</p>
+					</span>
+				</dd>
+			</dl>
+			<ol class="num">
+				<li>인증서를 가져올 스마트폰에서 인증센터 > 인증서 복사 > 스마트폰에서 가져오기</li>
+				<li>인증서를 가져올 스마트폰에 표시된 [인증번호]를 위의 인증번호 입력란에 입력 후 [내보내기] 선택</li>
+				<li>인증서를 가져올 스마트폰에서 ‘공인인증서 복사 완료’ 메시지 확인</li>
+				<li>현재 스마트폰 화면에서 ‘공인인증서 내보내기 완료’ 메시지 확인</li>
+			</ol>
+		</div><!--//wrap-->
+		
+		<div class="footer">
+			<div class="wrap_btnf">
+				<button type="button" class="btn_s1 tm01"><span class="btn_icon check"></span>완료</button>
+			</div>
+		</div>
+	</article>
+</body>
+</html>

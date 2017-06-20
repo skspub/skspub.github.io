@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body>
+	<header class="top">
+		<h1 class="hidden">로그인</h1>
+	</header>
+	<article>
+		<form>
+		<div class="login_title">
+			<span class="icon lock"><em class="tm01 check"></em></span>
+			<ul>
+				<li><input type="radio" id="certification01" class="input_rd" name="certification" value=""><label for="certification01">공인인증서</label></li>
+				<li><input type="radio" id="certification02" class="input_rd" name="certification" value=""><label for="certification02">바이오</label></li>
+				<li><input type="radio" id="certification03" class="input_rd" name="certification" value=""><label for="certification03">아이디</label></li>
+			</ul>
+		</div>
+	
+		<fieldset>
+			<legend class="hidden">로그인</legend>
+			<div class="wrap">
+				<ul>
+					<li>
+						<span class="input_line">
+							<input type="text" title="사용자 ID" name="id" tabindex="1" placeholder="사용자 ID" class="input_hn tt01" value="" />
+						</span>
+					</li>
+					<li>
+						<span class="input_line">
+							<input type="password" title="비밀번호" name="p_password" tabindex="1" placeholder="비밀번호" class="input_hn tt01" value="" readonly />
+						</span>
+					</li>
+					<li>
+						<span class="input_line">
+							<input type="password" title="공인인증서 비밀번호" name="c_password" tabindex="1" placeholder="공인인증서 비밀번호" class="input_hn tt01" value="" readonly />
+						</span>
+					</li>
+					<li class="input_check">
+						<input type="checkbox" id="save_id" class="input_ck" name="save_ck" value=""/>
+						<label for="save_id">아이디 저장</label>
+						<input type="checkbox" id="save_ct" class="input_ck" name="save_ck" value=""/>
+						<label for="save_ct">공인인증</label>
+					</li>
+				</ul>
+			</div>
+		</fieldset>
+
+		<div class="footer">
+			<div class="wrap_btnf">
+				<button type="button" class="btn_s1 tm01"><span class="btn_icon check"></span>로그인</button>
+			</div>
+		</div>
+		</form>
+	</article>
+</body>
+</html>

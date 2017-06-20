@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- 자동전화 방지 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- 전체화면 모드 -->
+        <meta name="viewport" content="height=device-height,width=device-width" />
+        <!-- 가로화면 방지 -->
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/thema_blue.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <script src="../common/js/jquery-3.2.1.min.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+<body>
+	<header class="top">
+		<h1 class="hidden">인증서 가져오기(PC에서 스마트폰으로)</h1>
+	</header>
+	
+	<div class="get_cert_visual">
+		<em class="from_pc">
+			<span class="hidden">pc에서 phone으로 인증서 가져오기</span>
+		</em>
+	</div>
+	<div class="wrap">
+		<dl class="list_input">
+			<dt>인증번호</dt>
+			<dd>
+				<span class="input_box cert_num">
+					<input type="text" class="input_hn tt01 sp" title="인증용 번호 첫 4자리" value="1234" readonly />
+					<span class="unit">-</span>
+					<input type="text" class="input_hn tt01 sp" title="인증용 번호 중간 4자리" value="4567" readonly />
+					<span class="unit">-</span>
+					<input type="text" class="input_hn tt01 sp" title="인증용 번호 마지막 4자리" value="4523" readonly />
+				</span>
+			</dd>
+		</dl>
+		<ol class="num">
+			<li>PC에서 SK증권 WWW.SKS.CO.KR 접속<br>인증센터 > 스마트폰 인증서 이동 > 내보내기 (이용 중인 모바일앱 또는 서비스 선택)</li>
+			<li>PC 팝업창에 복사할 인증서 선택 > 암호 입력</li>
+			<li>현재 스마트폰 화면에 표시된 [인증번호]를 PC의 [인증번호] 입력 란에 입력</li>
+			<li>‘공인인증서 복사 완료’ 메시지가 뜨면 완료</li>
+		</ol>
+	</div>
+	
+</body>
+</html>
