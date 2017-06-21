@@ -10,9 +10,15 @@
         <!-- 전체화면 모드 -->
         <meta name="viewport" content="height=device-height,width=device-width" />
         <!-- 가로화면 방지 -->
-        <link rel="stylesheet" href="../common/css/common.css" />
+        <script>
+        var r = Math.floor(Math.random() * 100000000);
+document.write("<link rel=\"stylesheet\" href=\"../common/css/common.css?v=" + r + "\" />");
+document.write("<link rel=\"stylesheet\" href=\"../common/css/thema_blue.css?v=" + r + "\" />");
+document.write("<link rel=\"stylesheet\" href=\"../common/css/sks_app.css?v=" + r + "\" />");
+        </script>
+        <!-- <link rel="stylesheet" href="../common/css/common.css" />
         <link rel="stylesheet" href="../common/css/thema_blue.css" />
-        <link rel="stylesheet" href="../common/css/sks_app.css" />
+        <link rel="stylesheet" href="../common/css/sks_app.css" /> -->
         <script src="../common/js/jquery-3.2.1.min.js"></script>
         <script src="../common/js/common.js"></script>
     </head>
