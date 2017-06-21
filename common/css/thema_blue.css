@@ -66,7 +66,7 @@
 .idcard-explain > p:before {background:url(../../images/sp_idcard.png) no-repeat;}
 
 /* radio-group */
-.radio-group label input[type=radio]:checked + span {background-color: #00d1ea; border-color: #00a7bb;}
+.radio-group .form-parts input[type=radio]:checked + label {background-color: #00d1ea; border-color: #00a7bb;}
 
 /* tab */
 .tab-wrap .tab ul li button.tm01 {border-color: #00a7bb;}
