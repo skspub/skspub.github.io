@@ -381,13 +381,13 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 .table-list button,
 .table-list .empty {display: block;}
 .table-list[data-table-list-col="3"] button,
-.table-list[data-table-list-col="3"] .empty {width: 33.3%;}
+.table-list[data-table-list-col="3"] .empty {width: 33.3%; min-width: 33.3%;}
 .table-list button, .table-list .empty {height: 46px; border-left: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; font-size: 14px; padding: 0 10px; background-color: #fff; box-sizing: border-box;}
 .table-list button:nth-child(1),
 .table-list button:nth-child(2),
 .table-list button:nth-child(3) {border-top: 1px solid #e0e0e0;}
 .table-list *:nth-child(3n) {border-right: 1px solid #e0e0e0;}
-.table-list button:nth-child(3n-1) {width: 33.4%;}
+.table-list button:nth-child(3n-1) {width: 33.4%; min-width: 33.4%;}
 .table-list button:nth-child(3n-2) {}
 .table-list button[class^=tm] {color: #fff;}
 .table-list .empty {}
