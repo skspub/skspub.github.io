@@ -240,7 +240,7 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 .tab-wrap .tab ul li + li button {border-left: 0;}
 .tab-wrap .tab ul li button.tm01 {color: #fff;}
 .tab-wrap .tab-page-group {margin-top: 10px; width: 100%;}
-.tab-wrap .tab-page-group .tab-page {display: none;}
+.tab-wrap .tab-page-group .tab-page { width: 100%; display: none;}
 .tab-wrap .tab-page-group .tab-page.active {display: block;}
 
 /* box */
