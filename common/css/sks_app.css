@@ -231,9 +231,9 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 
 /* tab */
 .tab-wrap {width: 100%; margin-top: 23px;}
-.tab-wrap .tab {}
-.tab-wrap .tab ul {}
-.tab-wrap .tab ul li {width: 100%;}
+.tab-wrap .tab {width: 100%;}
+.tab-wrap .tab ul {width: 100%;}
+.tab-wrap .tab ul li {width: 50%;}
 .tab-wrap .tab ul li button {display: block; width: 100%; background-color: #fff; font-size: 13px; padding: 10px 0; text-align: center; border: 1px solid #ccc;}
 .tab-wrap .tab ul li:first-child button {border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
 .tab-wrap .tab ul li:last-child button {border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
