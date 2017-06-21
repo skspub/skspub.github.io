@@ -1,4 +1,4 @@
-/* 색테마 */ 
+/* 색테마 */
 .tm01 {background: #00d1ea !important;}
 .tm02 {background: #ffb300 !important;}
 .tm03 {background: #c1c1c1 !important;}
@@ -29,29 +29,26 @@
     66% {opacity: 0.5;}
     100% {opacity: 1;}
 }
-.progress {width: 40px; 
-	display: -webkt-box;
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
+.progress {width: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
-.progress:before, .progress:after, .progress span {display: inherit; width: 10px; height: 10px; border-radius: 5px; background: rgb(0, 209, 234);}
+.progress:before, .progress:after, .progress span {display: inherit;width: 10px; height: 10px; border-radius: 5px; background: #00d1ea;}
 .progress span {text-indent: 200%; overflow: hidden;}
 .progress:before, .progress:after {content: '';}
-.progress:before {
-	opacity: 1;
-	-webkit-animation: pulse 1.5s 0s infinite;
-			animation: pulse 1.5s 0s infinite;
+.progress:before {opacity: 1;
+    -webkit-animation: pulse 1.5s 0s infinite;
+            animation: pulse 1.5s 0s infinite;
 }
-.progress span {
-	opacity: 0.5;
-	-webkit-animation: pulse 1.5s 0.5s infinite;
-			animation: pulse 1.5s 0.5s infinite;
+.progress span {opacity: 0.5;
+    -webkit-animation: pulse 1.5s 0.5s infinite;
+            animation: pulse 1.5s 0.5s infinite;
 }
-.progress:after {
-	opacity: 0.3;
-	-webkit-animation: pulse 1.5s 1s infinite;
-			animation: pulse 1.5s 1s infinite;
+.progress:after {opacity: 0.3;
+    -webkit-animation: pulse 1.5s 1s infinite;
+            animation: pulse 1.5s 1s infinite;
 }
 
 /* 준비사항 */
