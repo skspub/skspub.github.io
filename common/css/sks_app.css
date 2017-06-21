@@ -365,7 +365,7 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 	align-items: center;
 }
 .idcard-explain > p {width: 120px; height: 120px; text-align: center; background-color: #f6f6f6; border: 1px solid #ebebeb; border-radius: 60px; font-size: 15px; color: #292929;}
-.idcard-explain > p:before {content: ''; width: 44px; height: 34px; margin-bottom: 13px; background-size: 44px 68px;}
+.idcard-explain > p:before {content: ''; display: block; width: 44px; height: 34px; margin-bottom: 13px; background-size: 44px 68px;}
 .idcard-explain > p.idcard:before {background-position: 0 0;}
 .idcard-explain > p.drive-license:before {background-position: 0 -34px;}
 .idcard-explain .unit {font-size: 13px; font-weight: bold;}
