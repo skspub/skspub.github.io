@@ -184,6 +184,13 @@ section.popup_sec {position: fixed; z-index: 1000;top: 0;width: 100%;height: 100
 	display: -webkit-flex;
 	display: -webkit-box;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+			justify-content: center;
 }
 
 /* popup요소 */
