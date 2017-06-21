@@ -294,10 +294,10 @@ label .small {font-size: 14px; color: #9a9a9a; margin-right: 9px;}
 /* radio-group */
 .radio-group {margin-top: 18px;}
 .radio-group .form-parts {display: inherit; background-color: #fff; position: relative; font-size: 12px;}
-.radio-group .form-parts + .form-parts span {border-left: 0;}
+.radio-group .form-parts + .form-parts label {border-left: 0;}
 .radio-group[data-radio-group-col="3"] .form-parts {width: 33.3%;}
-.radio-group .form-parts:first-child span {border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
-.radio-group .form-parts:last-child span {border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
+.radio-group .form-parts:first-child label {border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
+.radio-group .form-parts:last-child label {border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
 .radio-group .form-parts input[type=radio] {position: absolute; top: 0; left: 0; -webkit-appearance: none; opacity: 0;}
 .radio-group .form-parts label {padding: 8px 0 10px; display: block; width: 100%; text-align: center; border: 1px solid #ccc;}
 .radio-group .form-parts input[type=radio]:checked + label span {color: #fff;}
