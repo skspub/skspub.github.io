@@ -378,6 +378,8 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 
 /* 테이블로 된 버튼 리스트 */
 .table-list {width: 100%;}
+.table-list:after {content: ''; display: block; clear: both;}
+.table-list button {float: left;}
 .table-list button,
 .table-list .empty {display: block;}
 .table-list[data-table-list-col="3"] button,
