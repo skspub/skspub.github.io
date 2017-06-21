@@ -21,6 +21,11 @@ document.write("<link rel=\"stylesheet\" href=\"../common/css/sks_app.css?v=" + 
         <link rel="stylesheet" href="../common/css/sks_app.css" /> -->
         <script src="../common/js/jquery-3.2.1.min.js"></script>
         <script src="../common/js/common.js"></script>
+        <script>
+$(function () {
+    alert($("#wow").css("display"));
+});
+        </script>
     </head>
 <body>
     <header class="top">
@@ -44,7 +49,7 @@ document.write("<link rel=\"stylesheet\" href=\"../common/css/sks_app.css?v=" + 
                     <ul>
                         <li>
                             <!-- 여기서 선택한 금융기관명이 다음 li 태그에 표시됨 -->
-                            <div class="tab-wrap" data-common-tab="tm01" data-fc-refresh="">
+                            <div class="tab-wrap" data-common-tab="tm01" data-fc-refresh="" >
                                 <div class="tab">
                                     <ul class="flex justify-center">
                                         <li class="active">
@@ -96,7 +101,7 @@ document.write("<link rel=\"stylesheet\" href=\"../common/css/sks_app.css?v=" + 
                             </div>
                         </li>
                         <li>
-                            <span class="input_line justify">
+                            <span class="input_line justify" id="wow">
                                 <span>국민은행</span>
                                 <button class="btn_s3 tm01 nowrap">다시선택</button>
                             </span>
