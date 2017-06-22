@@ -280,7 +280,7 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 
 .text-input-inline {}
 .text-input-inline input + input {margin-left: 2%;}
-.text-input-inline input {width: 29%;}
+.text-input-inline input {width: 49%;}
 
 label .small {font-size: 14px; color: #9a9a9a; margin-right: 9px;}
 
