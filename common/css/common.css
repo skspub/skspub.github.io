@@ -285,8 +285,9 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 .form-group .btn-radio + .btn-radio {margin-left: 5px;}
 
 .text-input-inline {}
+.text-input-inline:after {content: ''; clear: both; display: block;}
 .text-input-inline input + input {margin-left: 2%;}
-.text-input-inline input {width: 49%;}
+.text-input-inline input {width: 49%; float: left;}
 
 label .small {font-size: 14px; color: #9a9a9a; margin-right: 9px;}
 
