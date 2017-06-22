@@ -242,7 +242,7 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 .btn_pclose {background: url("../../images/btn_pop_x.png") no-repeat;width:20px;height:20px;background-size: 100%;}
 .btn_s4 {font-size: 12px;color: #292929;background-color: #fff;display: inline-block;width:100%;border-radius: 6px;border: 1px solid #959595;padding:15px 0;}
 /* 예외처리 */
-.btn_s3.tm01.nowrap {display: inline-block !important; width:38%;-webkit-box-pack: center;-webkit-justify-content: center;justify-content: center;}
+.btn_s3.tm01.nowrap {display: block !important; width:38%;-webkit-box-pack: center;-webkit-justify-content: center;justify-content: center;}
 .agreement-group .btn_s3.tm01 {border: 1px solid transparent;font-size: 11px;color: #fff;padding: 7px 10px;}
 .form-group.ar label span {min-width: 40px;}
 .form-group.ml30 label span {margin-right: 7px}
