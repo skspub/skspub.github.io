@@ -176,7 +176,7 @@ input[type=text] {-webkit-appearance: none;}
 
 /* 레이아웃 요소 */
 article {/*-webkit-overflow-scrolling: touch;*/padding-bottom: 100px;}
-div.wrap {padding:0 20px}
+div.wrap {padding:0 20px; box-sizing: border-box;}
 div.wrap.gray {background-color: #f5f5f5;}
 div.footer{position: fixed;/*position: absolute;*/width:100%;height:100px;left: 0;bottom: 0;padding:20px;box-sizing: border-box;background-color: #fff}
 div.dim {position:fixed;z-index: 999;width: 100%;height: 100%;background: rgba(0,0,0,.85);}
@@ -273,12 +273,12 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 .input_box.cert_num .unit {display: inherit; align-items: center;}
 
 /* form */
-.common-form {margin-top: 25px; line-height: 1.5; width: 100%; box-sizing: border-box;}
+.common-form {margin-top: 25px; line-height: 1.5;}
+.common-form,
 .common-form ul ,
 .common-form li ,
 .common-form .text-input-inline,
 .common-form .select-inline {width: 100%; box-sizing: border-box;}
-.common-form .text-input-inline, .common-form .select-inline {}
 .form-group {padding: 10px 0; display: block;}
 .form-group.ml30 label + label {margin-left: 30px;}
 .form-group .btn-radio + .btn-radio {margin-left: 5px;}
