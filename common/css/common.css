@@ -274,6 +274,13 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 
 /* form */
 .common-form {margin-top: 25px; line-height: 1.5;}
+.common-form ul ,
+.common-form li ,
+.common-form .text-input-inline,
+.common-form .select-inline {width: 100%; box-sizing: border-box;}
+.common-form ul {}
+.common-form li {}
+.common-form .text-input-inline, .common-form .select-inline {}
 .form-group {padding: 10px 0; display: block;}
 .form-group.ml30 label + label {margin-left: 30px;}
 .form-group .btn-radio + .btn-radio {margin-left: 5px;}
