@@ -209,7 +209,7 @@ input:focus,textarea:focus,select:focus {outline-style:none;}
 .input_hn[type=password]::-moz-placeholder, .input_pw[type=password]::-webkit-input-placeholder {font-size: 16px;letter-spacing: normal;}
 .input_hn[type=password], .input_pw[type=password] {font-size: 18px;line-height: 120%;}
 .input_line select {min-height: 6}
-.input_hn.rounded {border: 1px solid #ccc; border-radius: 4px;  padding: 14px 10px;}
+.input_hn.rounded {border: 1px solid #ccc; border-radius: 4px;  padding: 14px 10px; box-sizing: border-box; min-height: 44px;}
 .input_pw {width:100%;border:none;background-color:transparent;text-align: center;height:100%;}
 .input_pw.sp::-webkit-input-placeholder {font-size: 13px;color:#d4d4d4;letter-spacing: 18px}
 .input_pw.sp::-moz-placeholder {font-size: 13px;color:#d4d4d4;letter-spacing: 18px}
