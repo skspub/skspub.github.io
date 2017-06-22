@@ -273,13 +273,11 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 .input_box.cert_num .unit {display: inherit; align-items: center;}
 
 /* form */
-.common-form {margin-top: 25px; line-height: 1.5;}
+.common-form {margin-top: 25px; line-height: 1.5; width: 100%; box-sizing: border-box;}
 .common-form ul ,
 .common-form li ,
 .common-form .text-input-inline,
 .common-form .select-inline {width: 100%; box-sizing: border-box;}
-.common-form ul {}
-.common-form li {}
 .common-form .text-input-inline, .common-form .select-inline {}
 .form-group {padding: 10px 0; display: block;}
 .form-group.ml30 label + label {margin-left: 30px;}
