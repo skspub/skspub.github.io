@@ -13,6 +13,7 @@
 
 html, body, nav, header, footer, section, article, dl, dt, dd, div, p, ul, ol, li, h1, h2, h3, h4, h5, h6, form, select, fieldset, button, table, th, td, span, input, img {margin: 0;padding: 0;}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
+form {display: block; box-sizing: border-box; width: 100%;}
 body,button,h1,h2,h3,h4,h5,input,select,table,textarea{
 	font-family:NanumGothic,HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif;
 	color: #6b6b6b;
