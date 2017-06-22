@@ -35,10 +35,10 @@
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
-.progress:before, .progress:after, .progress span {display: inherit;width: 10px; height: 10px; border-radius: 5px; background: #00d1ea;}
+.progress .first, .progress .last, .progress span {display: inherit;width: 10px; height: 10px; border-radius: 5px; background: #00d1ea;}
 .progress span {text-indent: 200%; overflow: hidden;}
-.progress:before, .progress:after {content: '';}
-.progress:before {opacity: 1;
+.progress .first, .progress .last {content: '';}
+.progress .first {opacity: 1;
     -webkit-animation: pulse 1.5s 0s infinite;
             animation: pulse 1.5s 0s infinite;
 }
@@ -46,7 +46,7 @@
     -webkit-animation: pulse 1.5s 0.5s infinite;
             animation: pulse 1.5s 0.5s infinite;
 }
-.progress:after {opacity: 0.3;
+.progress .last {opacity: 0.3;
     -webkit-animation: pulse 1.5s 1s infinite;
             animation: pulse 1.5s 1s infinite;
 }
