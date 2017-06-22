@@ -91,7 +91,8 @@ body.video-call {background-color: #00a7bb;}
 .btn_s3.complete {border: 1px solid #00d1ea; color: #00d1ea;}
 
 /* faq */
-.faq dt.active button {color: #00d1ea; background-image: url(../../images/icon_arrow_up_point.png);}
+.faq dt.active button {color: #00d1ea;}
+.faq dt.active button:after {background-image: url(../../images/icon_arrow_up_point.png);}
 
 /* button checkbox */
 /*label.checkbox-btn input[type=checkbox]:checked + span {border: 1px solid #00d1ea; background-color: #00d1ea; color: #fff;}*/

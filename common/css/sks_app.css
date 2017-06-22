@@ -287,7 +287,8 @@ h2.title {padding-top: 18px; padding-bottom: 15px; font-size: 16px; color: #2929
 .faq {}
 .faq dd, .faq dt {border-bottom: 1px solid #ccc;}
 .faq dt {}
-.faq dt button {width: 100%; padding: 24px 30px 24px 0; text-align: left; background-color: transparent; font-size: 16px; color: #6b6b6b; background: url(../../images/icon_arrow_down_gray.png) right 10px top 50% no-repeat; background-size: 10px 6px;}
+.faq dt button {width: 100%; padding: 24px 30px 24px 0; text-align: left; background-color: transparent; font-size: 16px; color: #6b6b6b;}
+.faq dt button:after {content: ""; display: block; width: 10px; height: 6px; background: url("../../images/icon_arrow_down_gray.png") 0 0 no-repeat; background-size: 10px 6px;}
 .faq dt.active button {}
 .faq dt.active + dd {display: block;}
 .faq dd {display: none; background-color: #f8f8f8; padding: 12px 14px;}
