@@ -31,13 +31,15 @@
 }
 .progress {width: 40px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
-.progress .first, .progress .last, .progress span {display: inherit;width: 10px; height: 10px; border-radius: 5px; background: #00d1ea;}
+.progress .first,
+.progress .last,
+.progress span {display: inherit; width: 10px; height: 10px; border-radius: 5px; background: #00d1ea;}
 .progress span {text-indent: 200%; overflow: hidden;}
-.progress .first, .progress .last {content: '';}
 .progress .first {opacity: 1;
     -webkit-animation: pulse 1.5s 0s infinite;
             animation: pulse 1.5s 0s infinite;
