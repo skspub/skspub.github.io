@@ -10,23 +10,11 @@
         <!-- 전체화면 모드 -->
         <meta name="viewport" content="height=device-height,width=device-width" />
         <!-- 가로화면 방지 -->
-        <script>
-        var r = Math.floor(Math.random() * 100000000);
-document.write("<link rel=\"stylesheet\" href=\"../common/css/common.css?v=" + r + "\" />");
-document.write("<link rel=\"stylesheet\" href=\"../common/css/thema_blue.css?v=" + r + "\" />");
-document.write("<link rel=\"stylesheet\" href=\"../common/css/sks_app.css?v=" + r + "\" />");
-        </script>
-        <!-- <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
         <link rel="stylesheet" href="../common/css/thema_blue.css" />
-        <link rel="stylesheet" href="../common/css/sks_app.css" /> -->
+        <link rel="stylesheet" href="../common/css/sks_app.css" />
         <script src="../common/js/jquery-3.2.1.min.js"></script>
         <script src="../common/js/common.js"></script>
-        <script>
-$(function () {
-    alert($("#wow").css("display"));
-    alert($("#wow .btn_s3.tm01.nowrap").css("-webkit-box-pack"));
-});
-        </script>
     </head>
 <body>
     <header class="top">
@@ -81,7 +69,7 @@ $(function () {
                                     </div>
 
                                     <div class="tab-page" data-common-tab-page="2">
-                                        <div class="table-list flex flex-wrap" data-table-list-col="3" data-common-theme="tm01">
+                                        <div class="table-list" data-table-list-col="3" data-common-theme="tm01">
                                             <button type="button" class="tm01">한화증권</button>
                                             <button type="button">삼성증권</button>
                                             <button type="button">미래에셋증권</button>
@@ -104,7 +92,7 @@ $(function () {
                         <li>
                             <span class="input_line justify" id="wow">
                                 <span>국민은행</span>
-                                <button class="btn_s3 tm01 nowrap" style="-webkit-box-align: center;">다시선택</button>
+                                <button class="btn_s3 tm01 nowrap"><span>다시선택</span></button>
                             </span>
                         </li>
                         <li>
