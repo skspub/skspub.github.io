@@ -218,7 +218,7 @@ input:focus,textarea:focus,select:focus {outline-style:none;}
 .input_line.has-button input[type=password],
 .input_line.has-button input[type=text],
 .input_line.has-button input[type=tel],
-span.txt {width: 60%;}
+span.txt {width: 60%; margin-right: 1%;}
 .input_line label.lab {position:absolute;top:23px;left:0;z-index: 1;color:#c7c7c7;}
 .input_no_line {display: block; overflow: hidden; padding: 17px 0;}
 .input_line_group {border-top: 1px solid #ccc;}
