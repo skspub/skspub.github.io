@@ -254,10 +254,10 @@ button[class^=btn_s].nowrap {white-space: nowrap;}
 .input_line.col2 {}
 .input_line.col2:after {content: ""; clear: both; display: block;}
 .input_line.col2 input,
-.input_line.col2 .unit {margin: 0; display: block; float: left; box-sizing: border-box;}
+.input_line.col2 .unit {margin: 0; display: block; float: left; box-sizing: border-box; height: 63px;}
 .input_line.col2 input {width: 49%; position: static;}
 .input_line.col2 .unit {width: 2%;}
-.input_line.id-number {padding: 0;}
+.input_line.id-number {padding: 0; }
 
 
 .step_state {text-align: center;padding-top:20px;padding-bottom:0;height:27px;}
