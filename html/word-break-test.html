@@ -46,6 +46,34 @@
 
 
 </div>
+
+<script>
+
+(function(){
+  var keepall = function(target) {
+    var target = document.querySelectorAll(target);
+    var text = "";
+
+    console.log(target);
+
+    for(var i=0; i < target.length; i+=1) {
+      text = target[i].innerText;
+      text = text.split(" ");
+      console.log(text);
+      for ( var j=0; j < text.length; j+=1 ) {
+        text[j] = '<span style="white-space:nowrap;">'+text[j]+'</span>&nbsp;';
+      }
+      text = text.join(" ");
+      target[i].innerHTML = text;
+    }
+  };
+
+  window.keepall = keepall;
+})();
+
+keepall(".keep-all");
+
+</script>
 	
 </body>
 </html>
